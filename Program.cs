@@ -1,10 +1,66 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.Text.Json.Serialization.Metadata;
 
 namespace HelloWorld;
 
 class Program
 {
     static void Main(string[] args)
+    {
+        int l = int.Parse(Console.ReadLine());
+        Study0916(l);
+    }
+    static void Study0916(int num)
+    {
+         for (int i = 1; i < num; i++)
+        {
+            // 왼쪽 공백
+            for (int j = 0; j < num - i - 1; j++)
+            {
+                Console.Write(" ");
+            }
+
+            // 왼쪽 별
+            for (int j = 0; j < i * 2 + 1; j++)
+            {
+                Console.Write("*");
+            }
+
+            // 가운데 공백
+            for (int j = 0; j < (num - i - 1) * 2 + 1; j++)
+            {
+                Console.Write(" ");
+            }
+
+            // 오른쪽 별
+            for (int j = 0; j < i * 2 + 1; j++)
+            {
+                Console.Write("*");
+            }
+
+            Console.WriteLine();
+        }
+
+        // 하트 아랫부분
+        for (int i = 0; i < num * 2; i++)
+        {
+            // 왼쪽 공백
+            for (int j = 0; j < i; j++)
+            {
+                Console.Write(" ");
+            }
+
+            // 별
+            for (int j = 0; j < num * 4 - 1 - i * 2; j++)
+            {
+                Console.Write("*");
+            }
+
+            Console.WriteLine();
+        }
+
+    }
+    static void Study0915()
     {
         // C샵 프로젝트 만들기
         // 1. 프로젝트 이름으로 폴더를 만든다
