@@ -1,4 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.Net.NetworkInformation;
+using System.Reflection.PortableExecutable;
 using System.Text.Json.Serialization.Metadata;
 
 namespace HelloWorld;
@@ -7,8 +9,41 @@ class Program
 {
     static void Main(string[] args)
     {
-        int l = int.Parse(Console.ReadLine());
-        Study0916(l);
+        
+        Study0917();
+    }
+    static int a;
+    static void Study0917()
+    {
+        // 정수 
+        int score = default(int);
+        Console.WriteLine("int :" + score);
+
+        // 문자열
+        string name = default(string);
+        Console.WriteLine("string : " + name);
+
+        // bool
+        bool isStudent = default(bool); 
+        Console.WriteLine("boolean : " + isStudent);
+
+        // 문자
+        char alpha = default(char);
+        Console.WriteLine("char : " + alpha);
+        Console.WriteLine(alpha == '?'); // (int)'?'); // (int)alpha);
+
+        // if (isStudent == true) 
+        if (!isStudent)
+            Console.WriteLine("학생 맞음");
+        else if (isStudent == false) 
+            Console.WriteLine("학생 아님");
+
+        
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.Write(" " + i);
+        }
+            
     }
     static void Study0916(int num)
     {

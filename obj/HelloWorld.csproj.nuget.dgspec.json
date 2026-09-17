@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\HelloWorld\\HelloWorld.csproj": {}
+    "C:\\HelloWorld\\HelloWorld.csproj": {}
   },
   "projects": {
-    "c:\\HelloWorld\\HelloWorld.csproj": {
+    "C:\\HelloWorld\\HelloWorld.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\HelloWorld\\HelloWorld.csproj",
+        "projectUniqueName": "C:\\HelloWorld\\HelloWorld.csproj",
         "projectName": "HelloWorld",
-        "projectPath": "c:\\HelloWorld\\HelloWorld.csproj",
+        "projectPath": "C:\\HelloWorld\\HelloWorld.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "c:\\HelloWorld\\obj\\",
+        "outputPath": "C:\\HelloWorld\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
