@@ -6,11 +6,35 @@ using System.Text.Json.Serialization.Metadata;
 namespace HelloWorld;
 
 class Program
-{
+{   
     static void Main(string[] args)
     {
-        
-        Study0917();
+        // Study0918();
+
+        // 스택 오버플로우 에러
+        Test();
+
+    }
+
+    static void Test()
+    {
+        Test();
+    }
+    static void Study0918()
+    {
+        // Data type
+        // 정수 
+        int value = int.MaxValue; // MinValue
+
+        Console.WriteLine(value);
+
+        Console.WriteLine(char.MaxValue + " " + char.MinValue);
+
+        // 크기
+        Console.WriteLine(sizeof(int) + " " + sizeof(char) + " " + sizeof(bool));
+
+        String str = "abc deg";
+        Console.WriteLine(str.Length);
     }
     static int a;
     static void Study0917()
