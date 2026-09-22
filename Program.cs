@@ -1,7 +1,10 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System.Data;
+using System.Diagnostics.CodeAnalysis;
 using System.Net.NetworkInformation;
 using System.Reflection.PortableExecutable;
 using System.Text.Json.Serialization.Metadata;
+using System.Drawing;
+using System.Drawing.Text;
 
 namespace HelloWorld;
 
@@ -9,13 +12,64 @@ class Program
 {   
     static void Main(string[] args)
     {
-        // Study0918();
+        Study0922();
 
         // 스택 오버플로우 에러
-        Test();
+        // Test();
 
     }
 
+    static void Study0922()
+    {
+        // 실수형 float, double, decimal
+        // double size = 10.0;
+        // float halfSize = 5.1f;
+        // decimal largeSize = 20.04m;
+
+        // Console.WriteLine(sizeof(double));
+        // Console.WriteLine(sizeof(float));
+        // Console.WriteLine(sizeof(decimal));
+
+        // //
+        // int a = 100;
+        // float b = a;
+        // // 명시적 변환 (explicit conversion)
+        // float c = 12.34f;
+        // int d = (int)c;
+        // Console.WriteLine(a + "," + b + "," + c + "," + d);
+
+        // // 논리 연산자 : 논리 곱 &&, 논리 합 ||, 부정 !
+
+        // bool b1 = true, b2 = false;
+        // bool result1 = b1 && b2;
+        // bool result2 = b1 || b2;
+        // Console.WriteLine(result1 + "," + result2);
+
+        // // 비트 연산자 and &, or |, xor ^
+        // int aa = 10, bb = 6;
+        // Console.WriteLine(aa & bb);
+        // Console.WriteLine(aa | bb);
+        // Console.WriteLine(aa ^ bb);
+
+        // // while, for
+        // bool condition = true;
+        // while (condition)
+        // {
+        //     if (size == 100)
+        //         condition = false;
+        // }
+
+        // 구구단
+        for (int i = 2; i < 10; i++)
+        {
+            Console.WriteLine(i + "단");
+            for (int j = 1; j < 10; j++)
+            {
+                Console.WriteLine(i + " x " + j + " = " + i*j);
+            }
+        }
+
+    }
     static void Test()
     {
         Test();
