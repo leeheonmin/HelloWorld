@@ -12,11 +12,40 @@ class Program
 {   
     static void Main(string[] args)
     {
-        Study0922();
+        Study0923();
 
         // 스택 오버플로우 에러
         // Test();
 
+    }
+
+    static void Study0923() {
+        int size = 0;
+
+        if (size == 0)
+        {
+            Console.WriteLine("0입니다");
+        } else if (size == 1)
+        {
+            //
+        } else if (size == 2)
+        {
+            //
+        } else
+        {
+            console.WriteLine("다른 값 입니다");
+        }
+
+        // break, continue
+        int num = 0;
+
+        while (num < 100)
+        {
+            if (num == 30) break;
+            Console.WriteLine("num : " + num);
+
+            num++;
+        }
     }
 
     static void Study0922()
